@@ -16,10 +16,12 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                sudo /home/hrtummal/miniconda3 init
+                #sudo /home/hrtummal/miniconda3 init
 
                 # TODO Complete the command to run pytest
-                sudo /home/hrtummal/miniconda3/bin/conda run -n base pytest
+                #sudo /home/hrtummal/miniconda3/bin/conda run -n base pytest
+                #pytest
+                conda activate base
                 pytest
 
                 echo 'pytest not runned'
