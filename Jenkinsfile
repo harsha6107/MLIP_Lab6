@@ -19,7 +19,7 @@ pipeline {
                 sudo /home/hrtummal/miniconda3 init
 
                 # TODO Complete the command to run pytest
-                sudo /home/hrtummal/miniconda3 run -n juan test
+                sudo /home/hrtummal/miniconda3 run -n base pytest
 
                 echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
