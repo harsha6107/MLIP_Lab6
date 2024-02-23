@@ -21,8 +21,14 @@ pipeline {
                 # TODO Complete the command to run pytest
                 #sudo /home/hrtummal/miniconda3/bin/conda run -n base pytest
                 #pytest
-                conda activate base
+                python3 -m venv mlip
+                source mlip/bin/activate
+                pip install pytest
+                pip install numpy
+                pip install pandas
+                pip install scikit-learn
                 pytest
+                deactivate
 
                 echo 'pytest not runned'
                 # exit 1 #comment this line after implementing Jenkinsfile
